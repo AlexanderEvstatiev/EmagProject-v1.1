@@ -1,0 +1,11 @@
+package finalproject.emag.model.repository;
+
+import finalproject.emag.model.pojo.entity.Discount;
+import org.springframework.data.repository.PagingAndSortingRepository;
+
+import java.util.Optional;
+
+public interface DiscountRepository extends PagingAndSortingRepository<Discount, Long> {
+
+    Optional<Discount> findByProductId(Long id);
+}
