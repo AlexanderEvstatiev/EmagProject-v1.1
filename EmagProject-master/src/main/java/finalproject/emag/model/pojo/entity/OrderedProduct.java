@@ -17,7 +17,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @Table(name = "ordered_products")
-public class OrderedProduct {
+public final class OrderedProduct {
 
     @EmbeddedId
     private OrderedProductId id;

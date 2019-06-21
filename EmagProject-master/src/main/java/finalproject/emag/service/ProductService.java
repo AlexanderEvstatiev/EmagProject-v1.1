@@ -1,4 +1,4 @@
-package finalproject.emag.model.service;
+package finalproject.emag.service;
 
 import com.querydsl.core.types.OrderSpecifier;
 import com.querydsl.core.types.dsl.BooleanExpression;
@@ -12,7 +12,6 @@ import finalproject.emag.util.exception.ProductNotFoundException;
 import finalproject.emag.util.exception.ProductOutOfStockException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.security.access.method.P;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

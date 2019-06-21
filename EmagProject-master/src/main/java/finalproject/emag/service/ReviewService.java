@@ -1,4 +1,4 @@
-package finalproject.emag.model.service;
+package finalproject.emag.service;
 
 import finalproject.emag.model.dto.ReviewDto;
 import finalproject.emag.model.dto.ReviewRequestDto;
@@ -14,7 +14,6 @@ import finalproject.emag.util.exception.ReviewMissingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.validation.constraints.Min;
 import java.util.Optional;
 
 @Service

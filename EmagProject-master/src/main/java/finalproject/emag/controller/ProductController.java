@@ -4,7 +4,7 @@ import finalproject.emag.model.dto.AddProductDto;
 import finalproject.emag.model.dto.GlobalViewProductDto;
 import finalproject.emag.model.dto.ProductViewDto;
 import finalproject.emag.model.pojo.messages.MessageSuccess;
-import finalproject.emag.model.service.ProductService;
+import finalproject.emag.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

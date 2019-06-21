@@ -13,7 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Product {
+public final class Product {
 
     @Id
     @GeneratedValue

@@ -1,4 +1,4 @@
-package finalproject.emag.model.service;
+package finalproject.emag.service;
 
 import finalproject.emag.model.dto.PromotionProductDto;
 import finalproject.emag.model.dto.RemovePromotionDto;

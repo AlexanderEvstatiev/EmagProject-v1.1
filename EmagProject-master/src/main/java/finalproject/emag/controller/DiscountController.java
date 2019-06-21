@@ -3,7 +3,7 @@ package finalproject.emag.controller;
 import finalproject.emag.model.dto.PromotionProductDto;
 import finalproject.emag.model.dto.RemovePromotionDto;
 import finalproject.emag.model.pojo.messages.MessageSuccess;
-import finalproject.emag.model.service.DiscountService;
+import finalproject.emag.service.DiscountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

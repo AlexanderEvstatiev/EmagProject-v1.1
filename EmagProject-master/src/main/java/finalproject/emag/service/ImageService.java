@@ -1,4 +1,4 @@
-package finalproject.emag.model.service;
+package finalproject.emag.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -17,7 +17,7 @@ import java.util.Objects;
 @AllArgsConstructor
 @Builder
 @Table(name = "orders")
-public class Order {
+public final class Order {
 
     @Id
     @GeneratedValue

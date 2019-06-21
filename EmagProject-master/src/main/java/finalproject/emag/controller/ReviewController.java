@@ -3,7 +3,7 @@ package finalproject.emag.controller;
 import finalproject.emag.model.dto.ReviewRequestDto;
 import finalproject.emag.model.pojo.entity.User;
 import finalproject.emag.model.pojo.messages.MessageSuccess;
-import finalproject.emag.model.service.ReviewService;
+import finalproject.emag.service.ReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
