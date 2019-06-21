@@ -3,7 +3,7 @@ package finalproject.emag.controller;
 import finalproject.emag.model.dto.AddProductDto;
 import finalproject.emag.model.dto.GlobalViewProductDto;
 import finalproject.emag.model.dto.ProductViewDto;
-import finalproject.emag.model.pojo.messages.MessageSuccess;
+import finalproject.emag.model.messages.MessageSuccess;
 import finalproject.emag.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;

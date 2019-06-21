@@ -1,4 +1,4 @@
-package finalproject.emag.model.pojo.entity;
+package finalproject.emag.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

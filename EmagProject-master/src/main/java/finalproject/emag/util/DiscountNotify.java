@@ -1,7 +1,7 @@
 package finalproject.emag.util;
 
 import finalproject.emag.model.dto.NotifyUserDto;
-import finalproject.emag.model.pojo.entity.User;
+import finalproject.emag.model.entity.User;
 import finalproject.emag.model.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

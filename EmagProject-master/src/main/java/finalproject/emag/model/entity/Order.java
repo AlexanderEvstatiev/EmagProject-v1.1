@@ -1,4 +1,4 @@
-package finalproject.emag.model.pojo.entity;
+package finalproject.emag.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,52 +6,46 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Objects;
 
 @Data
 @Entity
-@Table(name = "users")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public final class User {
+@Table(name = "orders")
+public final class Order {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    @Column(nullable = false)
-    private String email;
+    @OneToOne
+    @NotNull
+    private User user;
 
     @Column(nullable = false)
-    private String password;
+    private Double price;
 
     @Column(nullable = false)
-    private String name;
+    private LocalDate date;
 
-    private String username;
-
-    private String phoneNumber;
-
-    private LocalDate birthDate;
-
-    private boolean subscribed;
-
-    private boolean admin;
-
-    private String imageUrl;
+    @Transient
+    private List<Product> products;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        User user = (User) o;
-        return Objects.equals(getId(), user.getId());
+        Order order = (Order) o;
+        return id.equals(order.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId());
+        return Objects.hash(id);
     }
 }

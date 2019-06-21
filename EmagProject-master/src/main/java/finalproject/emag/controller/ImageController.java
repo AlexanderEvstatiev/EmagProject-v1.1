@@ -1,7 +1,7 @@
 package finalproject.emag.controller;
 
-import finalproject.emag.model.pojo.entity.User;
-import finalproject.emag.model.pojo.messages.MessageSuccess;
+import finalproject.emag.model.entity.User;
+import finalproject.emag.model.messages.MessageSuccess;
 import finalproject.emag.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

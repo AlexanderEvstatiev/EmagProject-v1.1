@@ -2,7 +2,7 @@ package finalproject.emag.service;
 
 import finalproject.emag.model.dto.CartProductDto;
 import finalproject.emag.model.dto.CartViewProductDto;
-import finalproject.emag.model.pojo.entity.Product;
+import finalproject.emag.model.entity.Product;
 import finalproject.emag.model.repository.ProductRepository;
 import finalproject.emag.util.exception.BaseException;
 import org.springframework.beans.factory.annotation.Autowired;

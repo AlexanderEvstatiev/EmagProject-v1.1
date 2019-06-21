@@ -1,11 +1,11 @@
 package finalproject.emag.service;
 
 import finalproject.emag.model.dto.CartProductDto;
-import finalproject.emag.model.pojo.composite.keys.OrderedProductId;
-import finalproject.emag.model.pojo.entity.Order;
-import finalproject.emag.model.pojo.entity.OrderedProduct;
-import finalproject.emag.model.pojo.entity.Product;
-import finalproject.emag.model.pojo.entity.User;
+import finalproject.emag.model.entity.keys.OrderedProductId;
+import finalproject.emag.model.entity.Order;
+import finalproject.emag.model.entity.OrderedProduct;
+import finalproject.emag.model.entity.Product;
+import finalproject.emag.model.entity.User;
 import finalproject.emag.model.repository.OrderRepository;
 import finalproject.emag.model.repository.OrderedProductRepository;
 import finalproject.emag.model.repository.ProductRepository;

@@ -1,6 +1,6 @@
 package finalproject.emag.model.dto;
 
-import finalproject.emag.model.pojo.entity.Category;
+import finalproject.emag.model.entity.Category;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

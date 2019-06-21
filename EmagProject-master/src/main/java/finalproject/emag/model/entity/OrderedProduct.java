@@ -1,6 +1,6 @@
-package finalproject.emag.model.pojo.entity;
+package finalproject.emag.model.entity;
 
-import finalproject.emag.model.pojo.composite.keys.OrderedProductId;
+import finalproject.emag.model.entity.keys.OrderedProductId;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

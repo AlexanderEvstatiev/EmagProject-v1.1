@@ -1,6 +1,6 @@
 package finalproject.emag.model.repository;
 
-import finalproject.emag.model.pojo.entity.Discount;
+import finalproject.emag.model.entity.Discount;
 import org.springframework.data.repository.PagingAndSortingRepository;
 
 import java.util.Optional;

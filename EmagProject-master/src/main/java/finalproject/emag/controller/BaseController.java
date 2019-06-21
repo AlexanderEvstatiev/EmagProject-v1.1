@@ -1,10 +1,9 @@
 package finalproject.emag.controller;
 
-import finalproject.emag.model.pojo.entity.User;
-import finalproject.emag.model.pojo.messages.ErrorMsg;
+import finalproject.emag.model.entity.User;
+import finalproject.emag.model.messages.ErrorMsg;
 import finalproject.emag.util.exception.*;
 import org.apache.log4j.Logger;
-import org.springframework.beans.TypeMismatchException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -2,8 +2,8 @@ package finalproject.emag.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import finalproject.emag.model.pojo.entity.Product;
-import finalproject.emag.model.pojo.entity.User;
+import finalproject.emag.model.entity.Product;
+import finalproject.emag.model.entity.User;
 import finalproject.emag.model.repository.ProductRepository;
 import finalproject.emag.model.repository.UserRepository;
 import finalproject.emag.util.exception.ImageMissingException;

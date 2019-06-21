@@ -1,6 +1,6 @@
 package finalproject.emag.model.repository;
 
-import finalproject.emag.model.pojo.entity.Stat;
+import finalproject.emag.model.entity.Stat;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 

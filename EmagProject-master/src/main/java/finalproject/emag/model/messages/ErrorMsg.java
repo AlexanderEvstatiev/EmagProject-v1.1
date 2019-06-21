@@ -1,4 +1,4 @@
-package finalproject.emag.model.pojo.messages;
+package finalproject.emag.model.messages;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -3,7 +3,7 @@ package finalproject.emag.service;
 import com.querydsl.core.types.OrderSpecifier;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import finalproject.emag.model.dto.*;
-import finalproject.emag.model.pojo.entity.*;
+import finalproject.emag.model.entity.*;
 import finalproject.emag.model.repository.ProductRepository;
 import finalproject.emag.model.repository.ReviewRepository;
 import finalproject.emag.model.repository.StatRepository;

@@ -2,10 +2,10 @@ package finalproject.emag.service;
 
 import finalproject.emag.model.dto.ReviewDto;
 import finalproject.emag.model.dto.ReviewRequestDto;
-import finalproject.emag.model.pojo.composite.keys.ReviewId;
-import finalproject.emag.model.pojo.entity.Product;
-import finalproject.emag.model.pojo.entity.Review;
-import finalproject.emag.model.pojo.entity.User;
+import finalproject.emag.model.entity.keys.ReviewId;
+import finalproject.emag.model.entity.Product;
+import finalproject.emag.model.entity.Review;
+import finalproject.emag.model.entity.User;
 import finalproject.emag.model.repository.ReviewRepository;
 import finalproject.emag.util.exception.BaseException;
 import finalproject.emag.util.exception.MissingValuableFieldsException;

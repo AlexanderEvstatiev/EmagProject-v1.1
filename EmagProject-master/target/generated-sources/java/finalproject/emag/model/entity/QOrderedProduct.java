@@ -1,4 +1,4 @@
-package finalproject.emag.model.pojo.entity;
+package finalproject.emag.model.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -22,7 +22,7 @@ public class QOrderedProduct extends EntityPathBase<OrderedProduct> {
 
     public static final QOrderedProduct orderedProduct = new QOrderedProduct("orderedProduct");
 
-    public final finalproject.emag.model.pojo.composite.keys.QOrderedProductId id;
+    public final finalproject.emag.model.entity.keys.QOrderedProductId id;
 
     public final NumberPath<Integer> quantity = createNumber("quantity", Integer.class);
 
@@ -44,7 +44,7 @@ public class QOrderedProduct extends EntityPathBase<OrderedProduct> {
 
     public QOrderedProduct(Class<? extends OrderedProduct> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.id = inits.isInitialized("id") ? new finalproject.emag.model.pojo.composite.keys.QOrderedProductId(forProperty("id"), inits.get("id")) : null;
+        this.id = inits.isInitialized("id") ? new finalproject.emag.model.entity.keys.QOrderedProductId(forProperty("id"), inits.get("id")) : null;
     }
 
 }

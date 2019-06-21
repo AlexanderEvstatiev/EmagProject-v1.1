@@ -1,8 +1,8 @@
 package finalproject.emag.service;
 
 import finalproject.emag.model.dto.*;
-import finalproject.emag.model.pojo.entity.User;
-import finalproject.emag.model.pojo.messages.MessageSuccess;
+import finalproject.emag.model.entity.User;
+import finalproject.emag.model.messages.MessageSuccess;
 import finalproject.emag.model.repository.UserRepository;
 import finalproject.emag.util.GetDate;
 import finalproject.emag.util.PasswordEncoder;

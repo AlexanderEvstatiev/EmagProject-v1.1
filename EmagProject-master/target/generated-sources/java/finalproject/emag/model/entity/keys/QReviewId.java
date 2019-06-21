@@ -1,4 +1,4 @@
-package finalproject.emag.model.pojo.composite.keys;
+package finalproject.emag.model.entity.keys;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -22,9 +22,9 @@ public class QReviewId extends BeanPath<ReviewId> {
 
     public static final QReviewId reviewId = new QReviewId("reviewId");
 
-    public final finalproject.emag.model.pojo.entity.QProduct product;
+    public final finalproject.emag.model.entity.QProduct product;
 
-    public final finalproject.emag.model.pojo.entity.QUser user;
+    public final finalproject.emag.model.entity.QUser user;
 
     public QReviewId(String variable) {
         this(ReviewId.class, forVariable(variable), INITS);
@@ -44,8 +44,8 @@ public class QReviewId extends BeanPath<ReviewId> {
 
     public QReviewId(Class<? extends ReviewId> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.product = inits.isInitialized("product") ? new finalproject.emag.model.pojo.entity.QProduct(forProperty("product"), inits.get("product")) : null;
-        this.user = inits.isInitialized("user") ? new finalproject.emag.model.pojo.entity.QUser(forProperty("user")) : null;
+        this.product = inits.isInitialized("product") ? new finalproject.emag.model.entity.QProduct(forProperty("product"), inits.get("product")) : null;
+        this.user = inits.isInitialized("user") ? new finalproject.emag.model.entity.QUser(forProperty("user")) : null;
     }
 
 }

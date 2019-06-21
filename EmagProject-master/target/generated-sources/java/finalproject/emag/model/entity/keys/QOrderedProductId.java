@@ -1,4 +1,4 @@
-package finalproject.emag.model.pojo.composite.keys;
+package finalproject.emag.model.entity.keys;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -22,9 +22,9 @@ public class QOrderedProductId extends BeanPath<OrderedProductId> {
 
     public static final QOrderedProductId orderedProductId = new QOrderedProductId("orderedProductId");
 
-    public final finalproject.emag.model.pojo.entity.QOrder order;
+    public final finalproject.emag.model.entity.QOrder order;
 
-    public final finalproject.emag.model.pojo.entity.QProduct product;
+    public final finalproject.emag.model.entity.QProduct product;
 
     public QOrderedProductId(String variable) {
         this(OrderedProductId.class, forVariable(variable), INITS);
@@ -44,8 +44,8 @@ public class QOrderedProductId extends BeanPath<OrderedProductId> {
 
     public QOrderedProductId(Class<? extends OrderedProductId> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.order = inits.isInitialized("order") ? new finalproject.emag.model.pojo.entity.QOrder(forProperty("order"), inits.get("order")) : null;
-        this.product = inits.isInitialized("product") ? new finalproject.emag.model.pojo.entity.QProduct(forProperty("product"), inits.get("product")) : null;
+        this.order = inits.isInitialized("order") ? new finalproject.emag.model.entity.QOrder(forProperty("order"), inits.get("order")) : null;
+        this.product = inits.isInitialized("product") ? new finalproject.emag.model.entity.QProduct(forProperty("product"), inits.get("product")) : null;
     }
 
 }

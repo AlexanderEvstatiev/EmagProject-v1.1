@@ -1,6 +1,6 @@
 package finalproject.emag.model.repository;
 
-import finalproject.emag.model.pojo.entity.Product;
+import finalproject.emag.model.entity.Product;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.querydsl.QuerydslPredicateExecutor;

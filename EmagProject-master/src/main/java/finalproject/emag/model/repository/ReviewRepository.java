@@ -1,8 +1,8 @@
 package finalproject.emag.model.repository;
 
-import finalproject.emag.model.pojo.entity.Product;
-import finalproject.emag.model.pojo.entity.Review;
-import finalproject.emag.model.pojo.entity.User;
+import finalproject.emag.model.entity.Product;
+import finalproject.emag.model.entity.Review;
+import finalproject.emag.model.entity.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;

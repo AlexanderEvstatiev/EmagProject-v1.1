@@ -1,4 +1,4 @@
-package finalproject.emag.model.pojo.entity;
+package finalproject.emag.model.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
@@ -26,7 +26,7 @@ public class QReview extends EntityPathBase<Review> {
 
     public final NumberPath<Integer> grade = createNumber("grade", Integer.class);
 
-    public final finalproject.emag.model.pojo.composite.keys.QReviewId id;
+    public final finalproject.emag.model.entity.keys.QReviewId id;
 
     public final StringPath title = createString("title");
 
@@ -48,7 +48,7 @@ public class QReview extends EntityPathBase<Review> {
 
     public QReview(Class<? extends Review> type, PathMetadata metadata, PathInits inits) {
         super(type, metadata, inits);
-        this.id = inits.isInitialized("id") ? new finalproject.emag.model.pojo.composite.keys.QReviewId(forProperty("id"), inits.get("id")) : null;
+        this.id = inits.isInitialized("id") ? new finalproject.emag.model.entity.keys.QReviewId(forProperty("id"), inits.get("id")) : null;
     }
 
 }

@@ -1,7 +1,7 @@
-package finalproject.emag.model.pojo.composite.keys;
+package finalproject.emag.model.entity.keys;
 
-import finalproject.emag.model.pojo.entity.Order;
-import finalproject.emag.model.pojo.entity.Product;
+import finalproject.emag.model.entity.Order;
+import finalproject.emag.model.entity.Product;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
