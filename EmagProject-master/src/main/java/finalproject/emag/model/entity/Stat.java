@@ -18,7 +18,7 @@ public final class Stat {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
 
     @OneToOne
     @NotNull

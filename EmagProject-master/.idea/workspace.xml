@@ -6,52 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1efaea4f-a07d-4703-9b06-f47201472d3d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/OrderedProductId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/ReviewId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/DiscountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/DiscountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ProductViewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ProductViewDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Discount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/OrderedProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/OrderedProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/messages/ErrorMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/messages/ErrorMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/messages/MessageSuccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/messages/MessageSuccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/DiscountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/DiscountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/OrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/OrderedProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/OrderedProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/StatRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/StatRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/DiscountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/DiscountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ImageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ImageService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/composite/keys/QOrderedProductId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/composite/keys/QReviewId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QCategory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QDiscount.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QOrder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QOrderedProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QProduct.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QReview.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QStat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-sources/java/finalproject/emag/model/pojo/entity/QUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/OrderedProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/OrderedProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +26,105 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Discount.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/OrderedProductId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/ReviewId.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/OrderedProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+              <folding>
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -85,14 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ImageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/AddProductDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/CartProductDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/CartViewProductDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/EditEmailDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/EditPasswordDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/GlobalViewProductDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ProductViewDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/PromotionProductDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/RegisterUserDto.java" />
@@ -136,6 +188,14 @@
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/pojo/entity/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/service/ImageService.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Category.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Discount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Order.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/OrderedProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java" />
       </list>
     </option>
   </component>
@@ -158,7 +218,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1400" />
@@ -205,6 +265,74 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="emag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+              <item name="keys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="messages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
@@ -363,6 +491,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21641791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -415,76 +544,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="511" selection-start-line="511" selection-end-line="511" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/java/lang/IllegalArgumentException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE.jar!/org/springframework/web/bind/annotation/ExceptionHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="37" column="6" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.5.RELEASE/spring-web-5.1.5.RELEASE-sources.jar!/org/springframework/web/bind/annotation/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="104" column="18" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/java/text/ParseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="50" column="6" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/ValidationException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar!/javax/validation/ConstraintViolationException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/java/lang/RuntimeException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/util/exception/BaseException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/sun/reflect/generics/factory/CoreReflectionFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -616,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -643,75 +692,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Category.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Discount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Order.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="e#962#963#0" expanded="true" />
-            <element signature="e#1001#1002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/OrderedProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/EmagApplication.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#1049#1050#0" expanded="true" />
-            <element signature="e#1093#1094#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../EmagProject-master/src/main/java/finalproject/emag/controller/BaseController.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -776,6 +758,149 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/DiscountRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/OrderedProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/StatRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/messages/ErrorMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/messages/MessageSuccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Discount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Order.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+          <folding>
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/OrderedProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/OrderedProductId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/ReviewId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -21,14 +21,14 @@ public final class Order {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
 
     @OneToOne
     @NotNull
     private User user;
 
     @Column(nullable = false)
-    private Double price;
+    private double price;
 
     @Column(nullable = false)
     private LocalDate date;
@@ -41,11 +41,12 @@ public final class Order {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Order order = (Order) o;
-        return id.equals(order.id);
+        return getId() == order.getId() &&
+                Objects.equals(getUser(), order.getUser());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(getId(), getUser());
     }
 }

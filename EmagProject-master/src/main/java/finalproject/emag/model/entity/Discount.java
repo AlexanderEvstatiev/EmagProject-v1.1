@@ -19,7 +19,7 @@ public final class Discount {
 
     @Id
     @GeneratedValue
-    private Long id;
+    private long id;
 
     @OneToOne
     @NotNull
@@ -32,8 +32,8 @@ public final class Discount {
     private LocalDate endDate;
 
     @Column(nullable = false)
-    private Double oldPrice;
+    private double oldPrice;
 
     @Column(nullable = false)
-    private Double newPrice;
+    private double newPrice;
 }

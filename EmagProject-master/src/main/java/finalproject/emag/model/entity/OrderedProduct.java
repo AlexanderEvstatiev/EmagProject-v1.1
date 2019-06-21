@@ -23,5 +23,5 @@ public final class OrderedProduct {
     private OrderedProductId id;
 
     @Column(nullable = false)
-    private Integer quantity;
+    private int quantity;
 }

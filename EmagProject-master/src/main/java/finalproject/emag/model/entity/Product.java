@@ -17,13 +17,13 @@ public final class Product {
 
     @Id
     @GeneratedValue
-    private  Long id;
+    private long id;
 
     @OneToOne
     private Category category;
 
     @Column(nullable = false)
-    private  String name;
+    private String name;
 
     @Column(nullable = false)
     private double price;
@@ -31,5 +31,5 @@ public final class Product {
     @Column(nullable = false)
     private int quantity;
 
-    private  String imageUrl;
+    private String imageUrl;
 }

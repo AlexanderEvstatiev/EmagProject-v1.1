@@ -30,5 +30,5 @@ public final class Review {
     private String comment;
 
     @Column(nullable = false)
-    private Integer grade;
+    private int grade;
 }
