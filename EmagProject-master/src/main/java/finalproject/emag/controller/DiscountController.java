@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping(produces = "application/json")
-public class DiscountController extends BaseController {
+public final class DiscountController extends BaseController {
 
     @Autowired
     private DiscountService discountService;

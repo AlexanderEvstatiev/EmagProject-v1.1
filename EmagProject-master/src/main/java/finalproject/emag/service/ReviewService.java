@@ -17,7 +17,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class ReviewService {
+public final class ReviewService {
 
     @Autowired
     private ReviewRepository reviewRepo;
@@ -79,7 +79,7 @@ public class ReviewService {
     private void checkForReviewMissing (ReviewDto review) {
         ReviewId reviewId = constructReviewId(review);
         reviewRepo.findByIdProductAndIdUser(reviewId.getProduct(), reviewId.getUser())
-                .orElseThrow(() -> new ReviewMissingException());
+                .orElseThrow(ReviewMissingException::new);
     }
 
     private void checkForReviewPresent (ReviewDto review) {

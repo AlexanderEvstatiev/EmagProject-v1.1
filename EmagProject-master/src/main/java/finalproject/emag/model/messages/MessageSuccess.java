@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
-public class MessageSuccess {
+public final class MessageSuccess {
 
     private String message;
     private LocalDateTime time;

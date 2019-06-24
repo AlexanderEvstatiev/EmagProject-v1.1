@@ -15,7 +15,7 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping(produces = "application/json")
-public class CartController extends BaseController {
+public final class CartController extends BaseController {
 
     private static final String CART = "cart";
 

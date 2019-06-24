@@ -12,13 +12,13 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping(value = "/images",produces = "application/json")
-public class ImageController extends BaseController{
+public final class ImageController extends BaseController{
 
     @Autowired
     private ImageService imageService;
 
     @PostMapping("/users")
-    public MessageSuccess uploadUserImage(@RequestBody String input, HttpSession session) throws Exception {
+    public MessageSuccess uploadUserImage(@RequestBody String input, HttpSession session){
         validateLogin(session);
         User user = (User) session.getAttribute("user");
         this.imageService.uploadUserImage(user,input);
@@ -27,7 +27,7 @@ public class ImageController extends BaseController{
 
     @PostMapping("/products/{id}")
     public MessageSuccess uploadProductImage(
-            @RequestBody String input, @PathVariable("id") long productId, HttpSession session) throws Exception {
+            @RequestBody String input, @PathVariable("id") long productId, HttpSession session){
         validateLoginAdmin(session);
         this.imageService.uploadProductImage(productId,input);
         return new MessageSuccess("Image upload successful", LocalDateTime.now());

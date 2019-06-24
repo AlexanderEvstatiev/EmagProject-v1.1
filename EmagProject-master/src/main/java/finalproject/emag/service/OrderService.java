@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class OrderService {
+public final class OrderService {
 
     @Autowired
     private ProductService productService;

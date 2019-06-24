@@ -22,7 +22,7 @@ import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @Service
-public class ProductService {
+public final class ProductService {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -35,24 +35,6 @@ public class ProductService {
     @Autowired
     private ReviewRepository reviewRepository;
 
-    private ArrayList<GlobalViewProductDto> products(List<Product> productList) {
-        ArrayList<GlobalViewProductDto> products = new ArrayList<>();
-        for (Product product : productList) {
-            GlobalViewProductDto p = new GlobalViewProductDto();
-            p.setId(product.getId());
-            p.setName(product.getName());
-            p.setPrice(product.getPrice());
-            p.setQuantity(product.getQuantity());
-            int reviewsCount = reviewService.getReviewsCountForProduct(product.getId());
-            p.setReviewsCount(reviewsCount);
-            if (reviewsCount > 0) {
-                p.setReviewsGrade(reviewService.getReviewsAvgGradeForProduct(product.getId()));
-            }
-            products.add(p);
-        }
-        return  products;
-    }
-
     public ArrayList<GlobalViewProductDto> getAllProducts() {
         return products(productRepository.findAll());
     }
@@ -62,7 +44,6 @@ public class ProductService {
         return products(productRepository.findAllByCategoryId(categoryId));
     }
 
-    //TODO CHECK
     public ArrayList<GlobalViewProductDto> getAllProductsBySubcategoryFiltered
             (long id, String order, Double min, Double max){
         checkCategoryId(id);
@@ -79,13 +60,6 @@ public class ProductService {
         return products(employees);
     }
 
-    private void checkCategoryId(Long categoryId) {
-        List<Product> products  = productRepository.findAllByCategoryId(categoryId);
-        if (products.isEmpty()) {
-            throw new BaseException("No such category!");
-        }
-    }
-
     public ArrayList<GlobalViewProductDto> getAllProductsFiltered(String order, Double min, Double max) {
         BooleanExpression booleanExpression = QProduct.product.price.between(min, max);
         OrderSpecifier<Double> orderSpecifier;
@@ -99,22 +73,6 @@ public class ProductService {
                 .collect(Collectors.toList());
         return products(employees);
     }
-
-//    private Double getMaxPriceOfProduct() {
-//        return productRepository.findMaxPrice();
-//    }
-//
-//    private double getMaxPriceOfProductForSubcategory(long subcatId) {
-//        return productRepository.findMaxPriceByCategory(subcatId);
-//    }
-//
-//    private double getMinPriceOfProduct() {
-//        return productRepository.findMinPrice();
-//    }
-//
-//    private double getMinPriceOfProductForSubcategory(long subcatId) {
-//        return productRepository.findMinPriceByCategory(subcatId);
-//    }
 
     public ArrayList<GlobalViewProductDto> searchProducts(String name) {
         return products(productRepository.findByNameIgnoreCaseContaining(name));
@@ -136,25 +94,6 @@ public class ProductService {
         return product;
     }
 
-    private void addReviewsToProduct(ProductViewDto product, Product savedProduct) {
-        List<Review> reviews = reviewRepository.findById_Product(savedProduct);
-        for (Review review : reviews) {
-            ReviewViewDto view = new ReviewViewDto(review.getId().getUser().getId(),
-                    review.getTitle(), review.getComment(), review.getGrade());
-            product.addToReviews(view);
-        }
-    }
-
-    void checkIfProductExists(Long productId) {
-        productRepository.findById(productId).orElseThrow(() ->  new ProductNotFoundException("No such product."));
-    }
-
-    void checkProductQuantity(long id, int products) {
-        Product product = productRepository.findById(id).get();
-        if (product.getQuantity() < products)
-            throw new ProductOutOfStockException("This product does not have the wanted quantity.");
-    }
-
     public void changeQuantity(long id, int quantity) {
         checkIfProductExists(id);
         productRepository.changeProductQuantity(quantity, id);
@@ -169,6 +108,50 @@ public class ProductService {
     public void insertProductInDB(AddProductDto product) {
         Product savedProduct = addProduct(product);
         addStats(product, savedProduct);
+    }
+
+    void checkIfProductExists(Long productId) {
+        productRepository.findById(productId).orElseThrow(() ->  new ProductNotFoundException("No such product."));
+    }
+
+    void checkProductQuantity(long id, int products) {
+        Product product = productRepository.findById(id).get();
+        if (product.getQuantity() < products)
+            throw new ProductOutOfStockException("This product does not have the wanted quantity.");
+    }
+
+    private ArrayList<GlobalViewProductDto> products(List<Product> productList) {
+        ArrayList<GlobalViewProductDto> products = new ArrayList<>();
+        for (Product product : productList) {
+            GlobalViewProductDto p = new GlobalViewProductDto();
+            p.setId(product.getId());
+            p.setName(product.getName());
+            p.setPrice(product.getPrice());
+            p.setQuantity(product.getQuantity());
+            int reviewsCount = reviewService.getReviewsCountForProduct(product.getId());
+            p.setReviewsCount(reviewsCount);
+            if (reviewsCount > 0) {
+                p.setReviewsGrade(reviewService.getReviewsAvgGradeForProduct(product.getId()));
+            }
+            products.add(p);
+        }
+        return  products;
+    }
+
+    private void checkCategoryId(Long categoryId) {
+        List<Product> products  = productRepository.findAllByCategoryId(categoryId);
+        if (products.isEmpty()) {
+            throw new BaseException("No such category!");
+        }
+    }
+
+    private void addReviewsToProduct(ProductViewDto product, Product savedProduct) {
+        List<Review> reviews = reviewRepository.findById_Product(savedProduct);
+        for (Review review : reviews) {
+            ReviewViewDto view = new ReviewViewDto(review.getId().getUser().getId(),
+                    review.getTitle(), review.getComment(), review.getGrade());
+            product.addToReviews(view);
+        }
     }
 
     private Product addProduct(AddProductDto input) {

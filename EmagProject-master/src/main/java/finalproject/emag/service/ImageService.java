@@ -2,10 +2,12 @@ package finalproject.emag.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import finalproject.emag.model.entity.Product;
 import finalproject.emag.model.entity.User;
 import finalproject.emag.model.repository.ProductRepository;
 import finalproject.emag.model.repository.UserRepository;
+import finalproject.emag.util.exception.BaseException;
 import finalproject.emag.util.exception.ImageMissingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,7 +20,7 @@ import java.io.IOException;
 import java.util.Base64;
 
 @Service
-public class ImageService {
+public final class ImageService {
 
     private static final String IMAGE_PATH = "C:\\Users\\Aleksandar_Evstatiev\\Desktop\\images";
 
@@ -29,20 +31,28 @@ public class ImageService {
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Transactional
-    public void uploadProductImage(Long productId,String input) throws Exception{
-        Product product = productRepository.findById(productId).get();
-        JsonNode jsonNode = objectMapper.readTree(input);
-        String imageUrl = uploadImage(jsonNode,product.getId());
-        product.setImageUrl(imageUrl);
-        productRepository.save(product);
+    public void uploadProductImage(Long productId,String input) {
+        try {
+            Product product = productRepository.findById(productId).get();
+            JsonNode jsonNode = objectMapper.readTree(input);
+            String imageUrl = uploadImage(jsonNode, product.getId());
+            product.setImageUrl(imageUrl);
+            productRepository.save(product);
+        } catch (IOException e) {
+            throw new BaseException("Upload unavailable.");
+        }
     }
 
     @Transactional
-    public void uploadUserImage(User user, String input) throws Exception {
-        JsonNode jsonNode = objectMapper.readTree(input);
-        String imageUrl = uploadImage(jsonNode,user.getId());
-        user.setImageUrl(imageUrl);
-        this.userRepository.save(user);
+    public void uploadUserImage(User user, String input) {
+        try {
+            JsonNode jsonNode = objectMapper.readTree(input);
+            String imageUrl = uploadImage(jsonNode, user.getId());
+            user.setImageUrl(imageUrl);
+            this.userRepository.save(user);
+        } catch (IOException e) {
+            throw new BaseException("Upload unavailable.");
+        }
     }
 
     public byte[] getUserImage(long userId) {

@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
 
-public class GetDate {
+public final class GetDate {
 
     public static LocalDate getDate(String inputDate) {
         LocalDate date = null;

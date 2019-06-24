@@ -46,6 +46,61 @@ public class UserService {
                 .subscribed(input.isSubscribed()).build();
     }
 
+    @Transactional
+    public void addUser(User user) {
+        checkIfEmailIsFree(user.getEmail());
+        user.setPassword(PasswordEncoder.hashPassword(user.getPassword()));
+        User savedUser = userRepository.save(user);
+        user.setId(savedUser.getId());
+    }
+
+    @Transactional
+    public void editPersonalInfoUser(EditPersonalInfoDto input, User user) {
+        checkIfUsernameExists(input.getUsername());
+        user.setName(input.getName() == null ? user.getName() : input.getName());
+        user.setUsername(input.getUsername() == null ? user.getUsername() : input.getUsername());
+        user.setPhoneNumber(input.getPhoneNumber() == null ? user.getPhoneNumber() : checkPhone(input.getPhoneNumber()));
+        user.setBirthDate(input.getBirthDate() == null ? user.getBirthDate() : GetDate.getDate(input.getBirthDate()));
+        userRepository.save(user);
+    }
+
+    @Transactional
+    public void editEmail(EditEmailDto input, User user) {
+        checkIfEmailIsFree(input.getEmail());
+        checkCorrectPassword(user.getPassword(), input.getPassword());
+        user.setEmail(input.getEmail());
+        userRepository.save(user);
+    }
+
+    @Transactional
+    public void editPassword(EditPasswordDto input, User user) {
+        checkEditPasswordInputFields(input);
+        checkCorrectPassword(user.getPassword(), input.getCurrentPassword());
+        checkPasswordFormat(input.getFirstPassword());
+        checkIfPasswordsMatch(input.getFirstPassword(), input.getSecondPassword());
+        user.setPassword(PasswordEncoder.hashPassword(input.getFirstPassword()));
+        userRepository.save(user);
+    }
+
+    public MessageSuccess subscribe(User user) {
+        if(user.isSubscribed()) {
+            throw new AlreadySubscribedException();
+        }
+        user.setSubscribed(true);
+        userRepository.save(user);
+        return new MessageSuccess("You are now subscribed.",LocalDateTime.now());
+
+    }
+
+    public MessageSuccess unsubscribe (User user) {
+        if(!user.isSubscribed()) {
+            throw new NotSubscribedException();
+        }
+        user.setSubscribed(false);
+        userRepository.save(user);
+        return new MessageSuccess("You are now unsubscribed.",LocalDateTime.now());
+    }
+
     private void checkIfPasswordsMatch(String firstPassword, String secondPassword) {
         if (!firstPassword.equals(secondPassword)) {
             throw new PasswordsNotMatchingException();
@@ -62,7 +117,7 @@ public class UserService {
     private void checkPasswordFormat(String password) throws PasswordWrongFormatException {
         String passwordRegex = "^(?=\\S+$).{8,}$";
         if (!password.matches(passwordRegex)) {
-                throw new PasswordWrongFormatException();
+            throw new PasswordWrongFormatException();
         }
     }
 
@@ -85,14 +140,6 @@ public class UserService {
         }
     }
 
-    @Transactional
-    public void addUser(User user) {
-        checkIfEmailIsFree(user.getEmail());
-        user.setPassword(PasswordEncoder.hashPassword(user.getPassword()));
-        User savedUser = userRepository.save(user);
-        user.setId(savedUser.getId());
-    }
-
     private void checkIfEmailIsFree(String email) {
         Optional<User> user = userRepository.findByEmail(email);
         if(user.isPresent()) {
@@ -107,16 +154,6 @@ public class UserService {
         }
     }
 
-    @Transactional
-    public void editPersonalInfoUser(EditPersonalInfoDto input, User user) {
-        checkIfUsernameExists(input.getUsername());
-        user.setName(input.getName() == null ? user.getName() : input.getName());
-        user.setUsername(input.getUsername() == null ? user.getUsername() : input.getUsername());
-        user.setPhoneNumber(input.getPhoneNumber() == null ? user.getPhoneNumber() : checkPhone(input.getPhoneNumber()));
-        user.setBirthDate(input.getBirthDate() == null ? user.getBirthDate() : GetDate.getDate(input.getBirthDate()));
-        userRepository.save(user);
-    }
-
     private String checkPhone(String phone) {
         String phoneRegex = "08[789]\\d{7}";
         if (phone.matches(phoneRegex)) {
@@ -125,28 +162,10 @@ public class UserService {
         throw new PhoneWrongFormatException();
     }
 
-    @Transactional
-    public void editEmail(EditEmailDto input, User user) {
-        checkIfEmailIsFree(input.getEmail());
-        checkCorrectPassword(user.getPassword(), input.getPassword());
-        user.setEmail(input.getEmail());
-        userRepository.save(user);
-    }
-
     private void checkCorrectPassword(String savedPassword, String inputPassword) {
         if(!BCrypt.checkpw(inputPassword, savedPassword)){
             throw new WrongCredentialsException();
         }
-    }
-
-    @Transactional
-    public void editPassword(EditPasswordDto input, User user) {
-        checkEditPasswordInputFields(input);
-        checkCorrectPassword(user.getPassword(), input.getCurrentPassword());
-        checkPasswordFormat(input.getFirstPassword());
-        checkIfPasswordsMatch(input.getFirstPassword(), input.getSecondPassword());
-        user.setPassword(PasswordEncoder.hashPassword(input.getFirstPassword()));
-        userRepository.save(user);
     }
 
     private void checkEditPasswordInputFields(EditPasswordDto input) {
@@ -154,24 +173,5 @@ public class UserService {
                 || input.getSecondPassword() == null) {
             throw new MissingValuableFieldsException();
         }
-    }
-
-    public MessageSuccess subscribe(User user) {
-        if(user.isSubscribed()) {
-            throw new AlreadySubscribedException();
-        }
-        user.setSubscribed(true);
-        userRepository.save(user);
-        return new MessageSuccess("You are now subscribed.",LocalDateTime.now());
-
-    }
-
-    public MessageSuccess unsubscribe (User user) {
-        if(!user.isSubscribed()) {
-            throw new NotSubscribedException();
-        }
-        user.setSubscribed(false);
-        userRepository.save(user);
-        return new MessageSuccess("You are now unsubscribed.",LocalDateTime.now());
     }
 }

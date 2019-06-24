@@ -15,7 +15,7 @@ import javax.transaction.Transactional;
 
 
 @Service
-public class DiscountService {
+public final class DiscountService {
 
     @Autowired
     private DiscountRepository discountRepository;

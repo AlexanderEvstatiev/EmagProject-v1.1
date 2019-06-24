@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping(value = "/products",produces = "application/json")
-public class ReviewController extends BaseController{
+public final class ReviewController extends BaseController{
 
     private static final String USER = "user";
 

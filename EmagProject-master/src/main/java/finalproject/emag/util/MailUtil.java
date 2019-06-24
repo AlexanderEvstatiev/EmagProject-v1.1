@@ -5,9 +5,9 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Properties;
 
-public class MailUtil {
+final class MailUtil {
 
-    public static void sendMail(String from, String to, String subject, String content) throws MessagingException {
+    static void sendMail(String from, String to, String subject, String content) throws MessagingException {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
