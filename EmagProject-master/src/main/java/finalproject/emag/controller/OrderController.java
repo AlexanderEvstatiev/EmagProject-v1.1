@@ -4,6 +4,7 @@ import finalproject.emag.model.dto.CartProductDto;
 import finalproject.emag.model.entity.User;
 import finalproject.emag.model.messages.MessageSuccess;
 import finalproject.emag.service.OrderService;
+import finalproject.emag.util.AttributeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,10 +17,10 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping(produces = "application/json")
-public final class OrderController extends BaseController {
+public class OrderController extends BaseController {
 
-    private static final String CART = "cart";
-    private static final String USER = "user";
+    private static final String CART = AttributeUtil.CART.getValue();
+    private static final String USER = AttributeUtil.USER.getValue();
 
     @Autowired
     private OrderService orderService;

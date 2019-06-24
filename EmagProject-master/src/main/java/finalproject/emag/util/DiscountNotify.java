@@ -15,7 +15,7 @@ public final class DiscountNotify {
     @Autowired
     private UserRepository userRepository;
 
-    public void notifyForPromotion(String title,String message) {
+    public void notifyForPromotion(String title, String message) {
         ArrayList<NotifyUserDto> users = new ArrayList<>();
         for (User user : userRepository.findBySubscribedTrue()) {
             users.add(new NotifyUserDto(user.getEmail(), user.getName()));

@@ -6,6 +6,7 @@ import finalproject.emag.model.dto.ProductViewDto;
 import finalproject.emag.model.entity.Product;
 import finalproject.emag.service.CartService;
 import finalproject.emag.service.ProductService;
+import finalproject.emag.util.AttributeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,9 +16,9 @@ import java.util.HashMap;
 
 @RestController
 @RequestMapping(produces = "application/json")
-public final class CartController extends BaseController {
+public class CartController extends BaseController {
 
-    private static final String CART = "cart";
+    private static final String CART = AttributeUtil.CART.getValue();
 
     @Autowired
     private CartService cartService;

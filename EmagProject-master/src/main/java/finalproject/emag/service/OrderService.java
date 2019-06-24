@@ -1,11 +1,11 @@
 package finalproject.emag.service;
 
 import finalproject.emag.model.dto.CartProductDto;
-import finalproject.emag.model.entity.keys.OrderedProductId;
 import finalproject.emag.model.entity.Order;
 import finalproject.emag.model.entity.OrderedProduct;
 import finalproject.emag.model.entity.Product;
 import finalproject.emag.model.entity.User;
+import finalproject.emag.model.entity.keys.OrderedProductId;
 import finalproject.emag.model.repository.OrderRepository;
 import finalproject.emag.model.repository.OrderedProductRepository;
 import finalproject.emag.model.repository.ProductRepository;
@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public final class OrderService {
+public class OrderService {
 
     @Autowired
     private ProductService productService;

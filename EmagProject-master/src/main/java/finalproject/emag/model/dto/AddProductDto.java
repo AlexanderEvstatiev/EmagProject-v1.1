@@ -1,14 +1,10 @@
 package finalproject.emag.model.dto;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.HashSet;
 
-@Getter
-@Setter
-@NoArgsConstructor
+@Data
 public class AddProductDto {
 
     private long categoryId;

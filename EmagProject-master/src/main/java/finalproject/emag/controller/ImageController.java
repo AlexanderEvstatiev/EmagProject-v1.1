@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping(value = "/images",produces = "application/json")
-public final class ImageController extends BaseController{
+public class ImageController extends BaseController{
 
     @Autowired
     private ImageService imageService;

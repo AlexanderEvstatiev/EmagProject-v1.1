@@ -3,7 +3,6 @@ package finalproject.emag.model.dto;
 import lombok.Data;
 
 @Data
-
 public class RegisterUserDto {
 
     private String email;

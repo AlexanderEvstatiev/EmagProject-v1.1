@@ -2,6 +2,7 @@ package finalproject.emag.controller;
 
 import finalproject.emag.model.entity.User;
 import finalproject.emag.model.messages.ErrorMsg;
+import finalproject.emag.util.AttributeUtil;
 import finalproject.emag.util.exception.*;
 import org.apache.log4j.Logger;
 import org.springframework.http.HttpStatus;
@@ -18,7 +19,7 @@ import java.time.LocalDateTime;
 @RestController
 public abstract class BaseController {
 
-    private static final String USER = "user";
+    private static final String USER = AttributeUtil.USER.getValue();
 
     private static Logger log = Logger.getLogger(BaseController.class.getName());
 
@@ -56,13 +57,6 @@ public abstract class BaseController {
     public ErrorMsg dateParser(Exception e){
         return new ErrorMsg(e.getMessage(), HttpStatus.BAD_REQUEST.value(), LocalDateTime.now());
     }
-//
-//    @ExceptionHandler({Exception.class})
-//    @ResponseStatus(value = HttpStatus.INTERNAL_SERVER_ERROR)
-//    public ErrorMsg handleOtherErrors(Exception e){
-//        log.error("exception: "+e);
-//        return new ErrorMsg(e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR.value(), LocalDateTime.now());
-//    }
 
     void validateLogin(HttpSession session) {
         if(session.getAttribute(USER) == null){

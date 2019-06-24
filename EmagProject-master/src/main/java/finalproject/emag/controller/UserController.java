@@ -4,6 +4,7 @@ import finalproject.emag.model.dto.*;
 import finalproject.emag.model.entity.User;
 import finalproject.emag.model.messages.MessageSuccess;
 import finalproject.emag.service.UserService;
+import finalproject.emag.util.AttributeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,9 +14,9 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping(value = "/users",produces = "application/json")
-public final class UserController extends BaseController {
+public class UserController extends BaseController {
 
-    private static final String USER = "user";
+    private static final String USER = AttributeUtil.USER.getValue();
 
     @Autowired
     private UserService userService;

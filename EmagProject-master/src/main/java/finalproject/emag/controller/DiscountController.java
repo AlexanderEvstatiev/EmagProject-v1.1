@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping(produces = "application/json")
-public final class DiscountController extends BaseController {
+public class DiscountController extends BaseController {
 
     @Autowired
     private DiscountService discountService;
@@ -28,8 +28,7 @@ public final class DiscountController extends BaseController {
     @DeleteMapping(value = "/discounts/{id}")
     public MessageSuccess removeDiscount(@PathVariable("id") long productId, HttpServletRequest request){
         validateLoginAdmin(request.getSession());
-        RemovePromotionDto product = new RemovePromotionDto(productId);
-        discountService.removeDiscount(product);
+        discountService.removeDiscount(productId);
         return new MessageSuccess("Discount removed!", LocalDateTime.now());
     }
 }

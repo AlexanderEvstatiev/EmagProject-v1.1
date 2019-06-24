@@ -2,13 +2,13 @@ package finalproject.emag.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ser.Serializers;
 import finalproject.emag.model.entity.Product;
 import finalproject.emag.model.entity.User;
 import finalproject.emag.model.repository.ProductRepository;
 import finalproject.emag.model.repository.UserRepository;
 import finalproject.emag.util.exception.BaseException;
 import finalproject.emag.util.exception.ImageMissingException;
+import net.bytebuddy.asm.Advice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,20 +20,22 @@ import java.io.IOException;
 import java.util.Base64;
 
 @Service
-public final class ImageService {
+public class ImageService {
 
     private static final String IMAGE_PATH = "C:\\Users\\Aleksandar_Evstatiev\\Desktop\\images";
 
     @Autowired
     private ProductRepository productRepository;
     @Autowired
+    private ProductService productService;
+    @Autowired
     private UserRepository userRepository;
     private ObjectMapper objectMapper = new ObjectMapper();
 
     @Transactional
-    public void uploadProductImage(Long productId,String input) {
+    public void uploadProductImage(long productId, String input) {
         try {
-            Product product = productRepository.findById(productId).get();
+            Product product = productService.checkIfProductExists(productId);
             JsonNode jsonNode = objectMapper.readTree(input);
             String imageUrl = uploadImage(jsonNode, product.getId());
             product.setImageUrl(imageUrl);

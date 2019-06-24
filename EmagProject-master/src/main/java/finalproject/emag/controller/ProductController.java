@@ -18,7 +18,7 @@ import java.util.ArrayList;
 @RestController
 @RequestMapping(produces = "application/json")
 @Validated
-public final class ProductController extends BaseController {
+public class ProductController extends BaseController {
 
     private static final int MIN_NUMBER_OF_PRODUCTS = 0;
     private static final int MAX_NUMBER_OF_PRODUCTS = 9999;

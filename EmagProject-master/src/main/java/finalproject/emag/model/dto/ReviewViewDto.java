@@ -7,8 +7,8 @@ import lombok.Data;
 @AllArgsConstructor
 public class ReviewViewDto {
 
-    private Long userId;
+    private long userId;
     private String title;
     private String comment;
-    private Integer grade;
+    private int grade;
 }

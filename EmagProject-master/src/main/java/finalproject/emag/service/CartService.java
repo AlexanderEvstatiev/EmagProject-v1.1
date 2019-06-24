@@ -13,23 +13,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public final class CartService {
+public class CartService {
 
     @Autowired
     private ProductRepository productRepository;
     @Autowired
     private ProductService productService;
 
-    public ArrayList<CartViewProductDto> viewCart(HashMap<CartProductDto, Integer> userCart) {
-        ArrayList<CartViewProductDto> cart = new ArrayList<>();
-        for (Map.Entry<CartProductDto, Integer> e : userCart.entrySet()) {
+    public ArrayList<CartViewProductDto> viewCart(HashMap<CartProductDto, Integer> cart) {
+        ArrayList<CartViewProductDto> userCart = new ArrayList<>();
+        for (Map.Entry<CartProductDto, Integer> e : cart.entrySet()) {
             CartViewProductDto product = CartViewProductDto.builder().id(e.getKey().getId())
                     .name(e.getKey().getName())
                     .quantity(e.getValue())
                     .price(e.getKey().getPrice() * e.getValue()).build();
-            cart.add(product);
+            userCart.add(product);
         }
-        return cart;
+        return userCart;
     }
 
     public void addProductToCart(long productId, HashMap<CartProductDto, Integer> cart) {
@@ -58,19 +58,18 @@ public final class CartService {
     }
 
     private CartProductDto getProductForCart(long productId) {
-        productService.checkIfProductExists(productId);
+        Product product = productService.checkIfProductExists(productId);
         productService.checkProductQuantity(productId, 1);
-        return getProduct(productId);
+        return getProduct(product);
     }
 
     private CartProductDto getProductForRemove(long productId) {
-        productService.checkIfProductExists(productId);
-        return getProduct(productId);
+        Product product = productService.checkIfProductExists(productId);
+        return getProduct(product);
     }
 
-    private CartProductDto getProduct(long productId) {
-        Product product = productRepository.findById(productId).get();
+    private CartProductDto getProduct(Product product) {
         return CartProductDto.builder().
-                id(productId).name(product.getName()).price(product.getPrice()).build();
+                id(product.getId()).name(product.getName()).price(product.getPrice()).build();
     }
 }

@@ -10,7 +10,6 @@ import javax.persistence.Embeddable;
 import javax.persistence.OneToOne;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.util.Objects;
 
 @Data
 @AllArgsConstructor
@@ -25,18 +24,4 @@ public class ReviewId implements Serializable {
     @OneToOne
     @NotNull
     private Product product;
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ReviewId reviewId = (ReviewId) o;
-        return Objects.equals(getUser(), reviewId.getUser()) &&
-                Objects.equals(getProduct(), reviewId.getProduct());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getUser(), getProduct());
-    }
 }

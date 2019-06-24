@@ -18,11 +18,12 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 @Service
-public final class ProductService {
+public class ProductService {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -39,15 +40,16 @@ public final class ProductService {
         return products(productRepository.findAll());
     }
 
-    public ArrayList<GlobalViewProductDto> getAllProductsByCategory(Long categoryId) {
+    public ArrayList<GlobalViewProductDto> getAllProductsByCategory(long categoryId) {
         checkCategoryId(categoryId);
         return products(productRepository.findAllByCategoryId(categoryId));
     }
 
     public ArrayList<GlobalViewProductDto> getAllProductsBySubcategoryFiltered
-            (long id, String order, Double min, Double max){
+            (long id, String order, double min, double max){
         checkCategoryId(id);
-        BooleanExpression booleanExpression = QProduct.product.price.between(min, max).and(QProduct.product.category.id.eq(id));
+        BooleanExpression booleanExpression = QProduct.product.price.between(min, max)
+                .and(QProduct.product.category.id.eq(id));
         OrderSpecifier<Double> orderSpecifier;
         if (order.equals("DESC")) {
             orderSpecifier = QProduct.product.price.desc();
@@ -60,7 +62,7 @@ public final class ProductService {
         return products(employees);
     }
 
-    public ArrayList<GlobalViewProductDto> getAllProductsFiltered(String order, Double min, Double max) {
+    public ArrayList<GlobalViewProductDto> getAllProductsFiltered(String order, double min, double max) {
         BooleanExpression booleanExpression = QProduct.product.price.between(min, max);
         OrderSpecifier<Double> orderSpecifier;
         if (order.equals("DESC")) {
@@ -79,8 +81,7 @@ public final class ProductService {
     }
 
     public ProductViewDto getProductById(long productId) {
-        checkIfProductExists(productId);
-        Product savedProduct = productRepository.findById(productId).get();
+        Product savedProduct = checkIfProductExists(productId);
         ProductViewDto product = ProductViewDto.builder().id(savedProduct.getId())
                 .category(savedProduct.getCategory()).name(savedProduct.getName())
                 .price(savedProduct.getPrice()).imageUrl(savedProduct.getImageUrl())
@@ -94,13 +95,17 @@ public final class ProductService {
         return product;
     }
 
+    @Transactional
     public void changeQuantity(long id, int quantity) {
-        checkIfProductExists(id);
-        productRepository.changeProductQuantity(quantity, id);
+        Product product = checkIfProductExists(id);
+        product.setQuantity(quantity);
+        productRepository.save(product);
     }
 
+    @Transactional
     public void deleteProduct(long id) {
         checkIfProductExists(id);
+        statRepository.deleteAllByProductId(id);
         productRepository.deleteProductById(id);
     }
 
@@ -110,8 +115,12 @@ public final class ProductService {
         addStats(product, savedProduct);
     }
 
-    void checkIfProductExists(Long productId) {
-        productRepository.findById(productId).orElseThrow(() ->  new ProductNotFoundException("No such product."));
+    Product checkIfProductExists(long productId) {
+        Optional<Product> product = productRepository.findById(productId);
+        if(product.isPresent()) {
+            return product.get();
+        }
+        throw new ProductNotFoundException("This product does not exist.");
     }
 
     void checkProductQuantity(long id, int products) {
@@ -138,7 +147,7 @@ public final class ProductService {
         return  products;
     }
 
-    private void checkCategoryId(Long categoryId) {
+    private void checkCategoryId(long categoryId) {
         List<Product> products  = productRepository.findAllByCategoryId(categoryId);
         if (products.isEmpty()) {
             throw new BaseException("No such category!");
@@ -169,6 +178,5 @@ public final class ProductService {
                     .name(stat.getName()).unit(stat.getUnit()).value(stat.getValue()).build();
             statRepository.save(saveStat);
         }
-
     }
 }

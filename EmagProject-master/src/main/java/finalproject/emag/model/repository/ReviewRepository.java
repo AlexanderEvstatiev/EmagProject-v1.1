@@ -18,8 +18,8 @@ public interface ReviewRepository extends PagingAndSortingRepository<Review, Lon
     List<Review> findById_Product(Product product);
 
     @Query(value = "SELECT ROUND(AVG(grade)) FROM reviews WHERE product_id = ?1", nativeQuery = true)
-    int getReviewsAvgGradeForProduct(Long productId);
+    int getReviewsAvgGradeForProduct(long productId);
 
     @Query(value = "SELECT COUNT(*) FROM reviews WHERE product_id = ?1", nativeQuery = true)
-    int getReviewsCountForProduct(Long productId);
+    int getReviewsCountForProduct(long productId);
 }

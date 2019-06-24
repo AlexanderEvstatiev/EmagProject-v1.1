@@ -176,3 +176,25 @@
 05 Jun 2019 14:24:48,583  method:invalidInput  row:43  class name:BaseController.java  :exception: org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Double'; nested exception is java.lang.NumberFormatException: For input string: "sdsd"
 05 Jun 2019 14:40:42,251  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such category!
 05 Jun 2019 14:40:46,956  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such category!
+24 Jun 2019 12:00:29,067  method:handleNotLogged  row:28  class name:BaseController.java  :exception: finalproject.emag.util.exception.NotAdminException: You are not admin.
+24 Jun 2019 12:00:53,809  method:missingFields  row:35  class name:BaseController.java  :exception: finalproject.emag.util.exception.WrongCredentialsException: Wrong credentials
+24 Jun 2019 12:00:57,575  method:missingFields  row:35  class name:BaseController.java  :exception: finalproject.emag.util.exception.WrongCredentialsException: Wrong credentials
+24 Jun 2019 12:05:29,405  method:handleMyErrors  row:50  class name:BaseController.java  :exception: finalproject.emag.util.exception.ProductNotFoundException: This product does not exist.
+24 Jun 2019 12:20:10,367  method:handleMyErrors  row:50  class name:BaseController.java  :exception: finalproject.emag.util.exception.AlreadyLoggedException: You are already logged in.
+24 Jun 2019 12:20:19,499  method:handleMyErrors  row:50  class name:BaseController.java  :exception: finalproject.emag.util.exception.AlreadyLoggedException: You are already logged in.
+24 Jun 2019 12:37:48,473  method:handleMyErrors  row:50  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such product in cart!
+24 Jun 2019 12:56:07,144  method:handleMyErrors  row:50  class name:BaseController.java  :exception: finalproject.emag.util.exception.ProductOutOfStockException: This product does not have the wanted quantity.
+24 Jun 2019 13:34:01,127  method:missingFields  row:36  class name:BaseController.java  :exception: finalproject.emag.util.exception.WrongCredentialsException: Wrong credentials
+24 Jun 2019 13:34:43,829  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.AlreadySubscribedException: You are already subscribed
+24 Jun 2019 13:36:02,106  method:handleNotLogged  row:29  class name:BaseController.java  :exception: finalproject.emag.util.exception.NotAdminException: You are not admin.
+24 Jun 2019 13:36:34,679  method:handleNotLogged  row:29  class name:BaseController.java  :exception: finalproject.emag.util.exception.NotAdminException: You are not admin.
+24 Jun 2019 13:37:06,482  method:handleNotLogged  row:29  class name:BaseController.java  :exception: finalproject.emag.util.exception.NotAdminException: You are not admin.
+24 Jun 2019 13:37:15,408  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.ProductNotFoundException: This product does not exist.
+24 Jun 2019 13:38:38,209  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such category!
+24 Jun 2019 13:38:46,133  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such category!
+24 Jun 2019 13:53:44,456  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Invalid review grade!
+24 Jun 2019 13:53:56,531  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.ReviewExistsException: You already have review on this product
+24 Jun 2019 13:53:59,358  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.ProductNotFoundException: This product does not exist.
+24 Jun 2019 13:54:00,534  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.ReviewExistsException: You already have review on this product
+24 Jun 2019 13:54:42,045  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Discount does not exist!
+24 Jun 2019 13:56:55,977  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Discount does not exist!
