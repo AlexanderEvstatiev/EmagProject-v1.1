@@ -1,7 +1,6 @@
 package finalproject.emag.service;
 
-import finalproject.emag.model.dto.PromotionProductDto;
-import finalproject.emag.model.dto.RemovePromotionDto;
+import finalproject.emag.model.dto.DiscountProductDto;
 import finalproject.emag.model.entity.Discount;
 import finalproject.emag.model.entity.Product;
 import finalproject.emag.model.repository.DiscountRepository;
@@ -14,7 +13,6 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.Optional;
-import java.util.zip.DeflaterInputStream;
 
 
 @Service
@@ -30,7 +28,7 @@ public class DiscountService {
     private DiscountNotify discountNotify;
 
     @Transactional
-    public void addDiscount(PromotionProductDto product, long productId) {
+    public void addDiscount(DiscountProductDto product, long productId) {
         Product discounted = productService.checkIfProductExists(productId);
         double oldPrice = discounted.getPrice();
         Discount discount = Discount.builder().product(discounted).endDate(GetDate.getDate(product.getEndDate()))

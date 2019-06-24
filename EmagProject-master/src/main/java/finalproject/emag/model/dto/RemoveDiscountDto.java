@@ -3,12 +3,12 @@ package finalproject.emag.model.dto;
 import lombok.Data;
 
 @Data
-public class RemovePromotionDto {
+public class RemoveDiscountDto {
 
     private long productId;
     private double price;
 
-    public RemovePromotionDto(long productId) {
+    public RemoveDiscountDto(long productId) {
         this.productId = productId;
     }
 }

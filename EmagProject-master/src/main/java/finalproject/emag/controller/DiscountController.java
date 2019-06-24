@@ -1,7 +1,6 @@
 package finalproject.emag.controller;
 
-import finalproject.emag.model.dto.PromotionProductDto;
-import finalproject.emag.model.dto.RemovePromotionDto;
+import finalproject.emag.model.dto.DiscountProductDto;
 import finalproject.emag.model.messages.MessageSuccess;
 import finalproject.emag.service.DiscountService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +17,7 @@ public class DiscountController extends BaseController {
     private DiscountService discountService;
 
     @PostMapping(value = "/discounts/{id}")
-    public MessageSuccess addDiscount(@PathVariable("id") long productId, @RequestBody PromotionProductDto product,
+    public MessageSuccess addDiscount(@PathVariable("id") long productId, @RequestBody DiscountProductDto product,
                                       HttpServletRequest request) {
         validateLoginAdmin(request.getSession());
         discountService.addDiscount(product, productId);

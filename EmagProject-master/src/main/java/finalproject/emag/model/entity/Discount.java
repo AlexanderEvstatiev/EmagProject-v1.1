@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @Builder
 @Entity
 @Table(name = "discounts")
-public final class Discount {
+public class Discount {
 
     @Id
     @GeneratedValue

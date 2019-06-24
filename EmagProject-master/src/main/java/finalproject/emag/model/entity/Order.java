@@ -15,7 +15,7 @@ import java.time.LocalDate;
 @AllArgsConstructor
 @Builder
 @Table(name = "orders")
-public final class Order {
+public class Order {
 
     @Id
     @GeneratedValue

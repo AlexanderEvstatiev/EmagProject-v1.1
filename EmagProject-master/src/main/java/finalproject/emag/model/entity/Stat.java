@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 @AllArgsConstructor
 @Builder
 @Table(name = "stats")
-public final class Stat {
+public class Stat {
 
     @Id
     @GeneratedValue

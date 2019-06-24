@@ -18,7 +18,7 @@ import javax.persistence.Table;
 @NoArgsConstructor
 @Builder
 @Table(name = "reviews")
-public final class Review {
+public class Review {
 
     @EmbeddedId
     private ReviewId id;

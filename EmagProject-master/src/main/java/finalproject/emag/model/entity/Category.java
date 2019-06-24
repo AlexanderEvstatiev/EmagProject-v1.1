@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Entity
 @Builder
 @Table(name = "categories")
-public final class Category {
+public class Category {
 
     @Id
     @GeneratedValue

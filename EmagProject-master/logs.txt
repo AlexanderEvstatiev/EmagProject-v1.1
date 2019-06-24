@@ -198,3 +198,4 @@
 24 Jun 2019 13:54:00,534  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.ReviewExistsException: You already have review on this product
 24 Jun 2019 13:54:42,045  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Discount does not exist!
 24 Jun 2019 13:56:55,977  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Discount does not exist!
+24 Jun 2019 14:01:03,724  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such discount!
