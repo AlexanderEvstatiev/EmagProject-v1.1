@@ -13,6 +13,7 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 
 import javax.servlet.http.HttpSession;
 import javax.validation.ConstraintViolationException;
+import javax.validation.ValidationException;
 import java.text.ParseException;
 import java.time.LocalDateTime;
 
@@ -37,7 +38,7 @@ public abstract class BaseController {
         return new ErrorMsg(e.getMessage(), HttpStatus.NOT_FOUND.value(), LocalDateTime.now());
     }
 
-    @ExceptionHandler({ConstraintViolationException.class, MethodArgumentTypeMismatchException.class})
+    @ExceptionHandler({ValidationException.class, MethodArgumentTypeMismatchException.class})
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     public ErrorMsg invalidInput(Exception e){
         log.error("exception: "+e);

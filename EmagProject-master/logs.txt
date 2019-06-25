@@ -199,3 +199,4 @@
 24 Jun 2019 13:54:42,045  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Discount does not exist!
 24 Jun 2019 13:56:55,977  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Discount does not exist!
 24 Jun 2019 14:01:03,724  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such discount!
+25 Jun 2019 11:56:07,193  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Invalid review grade!

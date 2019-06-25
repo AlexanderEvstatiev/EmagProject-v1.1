@@ -15,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.EntitySerializer")
 public class QCategory extends EntityPathBase<Category> {
 
-    private static final long serialVersionUID = -2103469031L;
+    private static final long serialVersionUID = 622764751L;
 
     public static final QCategory category = new QCategory("category");
 

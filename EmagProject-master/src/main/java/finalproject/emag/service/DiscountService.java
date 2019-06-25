@@ -37,7 +37,7 @@ public class DiscountService {
         discountRepository.save(discount);
         discounted.setPrice(product.getNewPrice());
         productRepository.save(discounted);
-        discountNotify.notifyForPromotion("Promotion on "+discounted.getName(),
+        discountNotify.notifyForPromotion("Discount on "+discounted.getName(),
                 "We have a new special offer on " +
                 discounted.getName() + " from " + oldPrice+" to "+product.getNewPrice());
     }
@@ -51,7 +51,8 @@ public class DiscountService {
             product.setPrice(discount.getOldPrice());
             productRepository.save(product);
             discountRepository.delete(discount);
+        } else {
+            throw new BaseException("No such discount!");
         }
-        else throw new BaseException("No such discount!");
     }
 }

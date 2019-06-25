@@ -16,7 +16,7 @@ import com.querydsl.core.types.dsl.PathInits;
 @Generated("com.querydsl.codegen.EntitySerializer")
 public class QDiscount extends EntityPathBase<Discount> {
 
-    private static final long serialVersionUID = -1880796068L;
+    private static final long serialVersionUID = 845437714L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 

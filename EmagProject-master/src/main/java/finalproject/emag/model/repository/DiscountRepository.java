@@ -9,6 +9,4 @@ import java.util.Optional;
 public interface DiscountRepository extends PagingAndSortingRepository<Discount, Long> {
 
     Optional<Discount> findByProductId(long id);
-
-    Discount findById();
 }

@@ -26,8 +26,6 @@ import java.util.stream.StreamSupport;
 public class ProductService {
 
     @Autowired
-    private JdbcTemplate jdbcTemplate;
-    @Autowired
     private ProductRepository productRepository;
     @Autowired
     private ReviewService reviewService;
@@ -45,8 +43,8 @@ public class ProductService {
         return products(productRepository.findAllByCategoryId(categoryId));
     }
 
-    public ArrayList<GlobalViewProductDto> getAllProductsBySubcategoryFiltered
-            (long id, String order, double min, double max){
+    public ArrayList<GlobalViewProductDto> getAllProductsByCategoryFiltered
+            (long id, String order, double min, double max) {
         checkCategoryId(id);
         BooleanExpression booleanExpression = QProduct.product.price.between(min, max)
                 .and(QProduct.product.category.id.eq(id));
@@ -57,9 +55,9 @@ public class ProductService {
             orderSpecifier = QProduct.product.price.asc();
         }
         Iterable<Product> iterable = productRepository.findAll(booleanExpression, orderSpecifier);
-        List<Product> employees = StreamSupport.stream(iterable.spliterator(), false)
+        List<Product> products = StreamSupport.stream(iterable.spliterator(), false)
                 .collect(Collectors.toList());
-        return products(employees);
+        return products(products);
     }
 
     public ArrayList<GlobalViewProductDto> getAllProductsFiltered(String order, double min, double max) {
@@ -71,9 +69,9 @@ public class ProductService {
             orderSpecifier = QProduct.product.price.asc();
         }
         Iterable<Product> iterable = productRepository.findAll(booleanExpression, orderSpecifier);
-        List<Product> employees = StreamSupport.stream(iterable.spliterator(), false)
+        List<Product> products = StreamSupport.stream(iterable.spliterator(), false)
                 .collect(Collectors.toList());
-        return products(employees);
+        return products(products);
     }
 
     public ArrayList<GlobalViewProductDto> searchProducts(String name) {

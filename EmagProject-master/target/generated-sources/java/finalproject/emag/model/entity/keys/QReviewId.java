@@ -16,7 +16,7 @@ import com.querydsl.core.types.dsl.PathInits;
 @Generated("com.querydsl.codegen.EmbeddableSerializer")
 public class QReviewId extends BeanPath<ReviewId> {
 
-    private static final long serialVersionUID = 730974102L;
+    private static final long serialVersionUID = 1628834396L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 

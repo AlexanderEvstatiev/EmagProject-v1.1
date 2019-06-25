@@ -25,7 +25,7 @@ public class DiscountController extends BaseController {
     }
 
     @DeleteMapping(value = "/discounts/{id}")
-    public MessageSuccess removeDiscount(@PathVariable("id") long productId, HttpServletRequest request){
+    public MessageSuccess removeDiscount(@PathVariable("id") long productId, HttpServletRequest request) {
         validateLoginAdmin(request.getSession());
         discountService.removeDiscount(productId);
         return new MessageSuccess("Discount removed!", LocalDateTime.now());

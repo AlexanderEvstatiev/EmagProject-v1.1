@@ -86,6 +86,8 @@ public class ReviewService {
         ReviewId reviewId = constructReviewId(review);
         Optional<Review> savedReview = reviewRepo.
                 findByIdProductAndIdUser(reviewId.getProduct(), reviewId.getUser());
-        if (savedReview.isPresent()) throw new ReviewExistsException();
+        if (savedReview.isPresent()) {
+            throw new ReviewExistsException();
+        }
     }
 }

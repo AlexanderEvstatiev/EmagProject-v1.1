@@ -51,9 +51,9 @@ public class ProductController extends BaseController {
     public ArrayList<GlobalViewProductDto> getAllProductsBySubcategoryFiltered(
             @PathVariable(value = "id") long id,
             @RequestParam(value = "order", required = false, defaultValue = "ASC") String order,
-            @RequestParam(value = "from", required = false, defaultValue = MIN_PRICE) Double min,
-            @RequestParam(value = "to", required = false, defaultValue = MAX_PRICE) Double max) {
-        return productService.getAllProductsBySubcategoryFiltered(id, order, min, max);
+            @RequestParam(value = "from", required = false, defaultValue = MIN_PRICE) double min,
+            @RequestParam(value = "to", required = false, defaultValue = MAX_PRICE) double max) {
+        return productService.getAllProductsByCategoryFiltered(id, order, min, max);
     }
 
     @GetMapping(value = ("/products/{id}"))

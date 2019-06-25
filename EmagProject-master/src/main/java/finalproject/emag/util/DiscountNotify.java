@@ -25,9 +25,9 @@ public final class DiscountNotify {
             public void run(){
                 for (NotifyUserDto user : users){
                     try {
-                        MailUtil.sendMail("testingemag19@gmail.com",user.getEmail(),title,message);
+                        MailUtil.sendMail("testingemag19@gmail.com", user.getEmail(), title, message);
                     } catch (MessagingException e) {
-                        System.out.println("Ops there was a problem sending the email."+e.getMessage());
+                        System.out.println("Ops there was a problem sending the email." + e.getMessage());
                     }
                 }
             }
