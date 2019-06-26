@@ -203,3 +203,6 @@
 25 Jun 2019 18:42:43,344  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.AlreadyLoggedException: You are already logged in.
 25 Jun 2019 18:45:01,765  method:missingFields  row:37  class name:BaseController.java  :exception: finalproject.emag.util.exception.WrongCredentialsException: Wrong credentials
 25 Jun 2019 18:46:07,795  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.ProductNotFoundException: This product does not exist.
+26 Jun 2019 15:39:29,041  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Invalid review grade!
+26 Jun 2019 15:47:18,832  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.AlreadyLoggedException: You are already logged in.
+26 Jun 2019 15:48:08,177  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.AlreadyLoggedException: You are already logged in.

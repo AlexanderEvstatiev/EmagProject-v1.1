@@ -12,7 +12,6 @@ import finalproject.emag.model.repository.ProductRepository;
 import finalproject.emag.model.repository.ReviewRepository;
 import finalproject.emag.model.repository.StatRepository;
 import finalproject.emag.util.exception.BaseException;
-import org.assertj.core.api.Assertions;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

@@ -37,21 +37,12 @@ public class UserService {
         throw new WrongCredentialsException();
     }
 
-    public User getUserForRegister(RegisterUserDto input) {
-        checkRegisterInputFields(input);
-        checkEmail(input.getEmail());
-        checkPasswordFormat(input.getFirstPassword());
-        checkIfPasswordsMatch(input.getFirstPassword(), input.getSecondPassword());
-        return User.builder().email(input.getEmail()).name(input.getName()).password(input.getFirstPassword())
-                .subscribed(input.isSubscribed()).build();
-    }
-
     @Transactional
-    public void addUser(User user) {
+    public User addUser(RegisterUserDto input) {
+        User user = getUserForRegister(input);
         checkIfEmailIsFree(user.getEmail());
         user.setPassword(PasswordEncoder.hashPassword(user.getPassword()));
-        User savedUser = userRepository.save(user);
-        user.setId(savedUser.getId());
+        return userRepository.save(user);
     }
 
     @Transactional
@@ -101,6 +92,15 @@ public class UserService {
         return new MessageSuccess("You are now unsubscribed.",LocalDateTime.now());
     }
 
+    User getUserForRegister(RegisterUserDto input) {
+        checkRegisterInputFields(input);
+        checkEmail(input.getEmail());
+        checkPasswordFormat(input.getFirstPassword());
+        checkIfPasswordsMatch(input.getFirstPassword(), input.getSecondPassword());
+        return User.builder().email(input.getEmail()).name(input.getName()).password(input.getFirstPassword())
+                .subscribed(input.isSubscribed()).build();
+    }
+
     private void checkIfPasswordsMatch(String firstPassword, String secondPassword) {
         if (!firstPassword.equals(secondPassword)) {
             throw new PasswordsNotMatchingException();
@@ -129,7 +129,7 @@ public class UserService {
     }
 
     private void checkLoginPassword(String input, String password) {
-        if(!BCrypt.checkpw(input,password)){
+        if(!BCrypt.checkpw(input, password)){
             throw new WrongCredentialsException();
         }
     }

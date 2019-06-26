@@ -33,8 +33,7 @@ public class UserController extends BaseController {
     @PostMapping(value = "/register")
     public ViewUserDto registerUser(@RequestBody RegisterUserDto input, HttpSession session) {
         validateAlreadyLogged(session);
-        User user = userService.getUserForRegister(input);
-        this.userService.addUser(user);
+        User user = this.userService.addUser(input);
         session.setAttribute(USER, user);
         session.setMaxInactiveInterval((60 * 60));
         return userService.getLoggedUserInfo(user);
