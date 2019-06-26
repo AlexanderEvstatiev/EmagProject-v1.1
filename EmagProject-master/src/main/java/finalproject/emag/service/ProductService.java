@@ -161,11 +161,12 @@ public class ProductService {
         }
     }
 
-    private Product addProduct(AddProductDto input) {
+    Product addProduct(AddProductDto input) {
         Category category = Category.builder().id(input.getCategoryId()).build();
-        return productRepository.save(Product.builder().
+        Product product = Product.builder().
                 category(category).name(input.getName()).price(input.getPrice())
-                .quantity(input.getQuantity()).imageUrl(input.getImage()).build());
+                .quantity(input.getQuantity()).imageUrl(input.getImage()).build();
+        return productRepository.save(product);
     }
 
     private void addStats(AddProductDto product, Product savedProduct) {

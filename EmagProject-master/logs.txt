@@ -200,3 +200,6 @@
 24 Jun 2019 13:56:55,977  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Discount does not exist!
 24 Jun 2019 14:01:03,724  method:handleMyErrors  row:51  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: No such discount!
 25 Jun 2019 11:56:07,193  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.BaseException: Invalid review grade!
+25 Jun 2019 18:42:43,344  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.AlreadyLoggedException: You are already logged in.
+25 Jun 2019 18:45:01,765  method:missingFields  row:37  class name:BaseController.java  :exception: finalproject.emag.util.exception.WrongCredentialsException: Wrong credentials
+25 Jun 2019 18:46:07,795  method:handleMyErrors  row:52  class name:BaseController.java  :exception: finalproject.emag.util.exception.ProductNotFoundException: This product does not exist.
