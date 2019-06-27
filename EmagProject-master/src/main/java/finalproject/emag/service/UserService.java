@@ -92,7 +92,7 @@ public class UserService {
         return new MessageSuccess("You are now unsubscribed.",LocalDateTime.now());
     }
 
-    User getUserForRegister(RegisterUserDto input) {
+    private User getUserForRegister(RegisterUserDto input) {
         checkRegisterInputFields(input);
         checkEmail(input.getEmail());
         checkPasswordFormat(input.getFirstPassword());

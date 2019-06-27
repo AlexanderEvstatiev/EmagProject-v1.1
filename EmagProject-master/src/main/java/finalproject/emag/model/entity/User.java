@@ -40,4 +40,11 @@ public class User {
     private boolean admin;
 
     private String imageUrl;
+
+    public User(long id, String email, String password, String name) {
+        this.id = id;
+        this.email = email;
+        this.password = password;
+        this.name = name;
+    }
 }
