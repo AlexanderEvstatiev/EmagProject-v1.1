@@ -16,8 +16,6 @@ import java.util.Map;
 public class CartService {
 
     @Autowired
-    private ProductRepository productRepository;
-    @Autowired
     private ProductService productService;
 
     public ArrayList<CartViewProductDto> viewCart(HashMap<CartProductDto, Integer> cart) {
