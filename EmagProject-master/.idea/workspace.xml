@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1efaea4f-a07d-4703-9b06-f47201472d3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,32 +22,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ReviewServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/DiscountService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/DiscountServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="502">
-              <caret line="119" column="74" selection-start-line="119" selection-start-column="74" selection-end-line="119" selection-end-column="74" />
+              <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewRequestDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -63,37 +60,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-              <folding>
-                <element signature="e#781#782#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -147,8 +113,6 @@
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/DiscountController.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ImageController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java" />
-        <option value="$PROJECT_DIR$/src/test/java/finalproject/emag/service/DiscountServiceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/finalproject/emag/model/repository/DiscountRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/DiscountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/DiscountRepository.java" />
@@ -171,6 +135,8 @@
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" />
         <option value="$PROJECT_DIR$/src/test/java/finalproject/emag/service/ReviewServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java" />
+        <option value="$PROJECT_DIR$/src/test/java/finalproject/emag/service/DiscountServiceTest.java" />
       </list>
     </option>
   </component>
@@ -292,6 +258,15 @@
               <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="emag" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="EmagProject-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EmagProject-master" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -382,7 +357,7 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.finalproject.emag.service in EmagProject">
-    <configuration name="ReviewServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountServiceTest.addDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -391,29 +366,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReviewServiceTest.addReviewInvalidGrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="EmagProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="finalproject.emag.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
-      <option name="METHOD_NAME" value="addReviewInvalidGrade" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.DiscountServiceTest" />
+      <option name="METHOD_NAME" value="addDiscount" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewServiceTest.getReviewAvgGradeForProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountServiceTest.addDiscountNoSuchProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -422,14 +382,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
-      <option name="METHOD_NAME" value="getReviewAvgGradeForProduct" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.DiscountServiceTest" />
+      <option name="METHOD_NAME" value="addDiscountNoSuchProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReviewServiceTest.getReviewCountForProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountServiceTest.removeDiscount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -438,8 +398,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
-      <option name="METHOD_NAME" value="getReviewCountForProduct" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.DiscountServiceTest" />
+      <option name="METHOD_NAME" value="removeDiscount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountServiceTest.removeDiscountNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmagProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="finalproject.emag.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="finalproject.emag.service" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.DiscountServiceTest" />
+      <option name="METHOD_NAME" value="removeDiscountNotExist" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -469,10 +445,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.finalproject.emag.service in EmagProject" />
-        <item itemvalue="JUnit.ReviewServiceTest.getReviewAvgGradeForProduct" />
-        <item itemvalue="JUnit.ReviewServiceTest.getReviewCountForProduct" />
-        <item itemvalue="JUnit.ReviewServiceTest.addReviewInvalidGrade" />
-        <item itemvalue="JUnit.ReviewServiceTest" />
+        <item itemvalue="JUnit.DiscountServiceTest.removeDiscountNotExist" />
+        <item itemvalue="JUnit.DiscountServiceTest.removeDiscount" />
+        <item itemvalue="JUnit.DiscountServiceTest.addDiscountNoSuchProduct" />
+        <item itemvalue="JUnit.DiscountServiceTest.addDiscount" />
       </list>
     </recent_temporary>
   </component>
@@ -507,27 +483,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ReviewServiceTest_deleteReviewProductNotExist - 2019.06.27 at 12h 28m 45s.xml">
-      <configuration name="ReviewServiceTest.deleteReviewProductNotExist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewServiceTest_deleteReviewNotExist - 2019.06.27 at 12h 30m 11s.xml">
-      <configuration name="ReviewServiceTest.deleteReviewNotExist" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewServiceTest_editReview - 2019.06.27 at 12h 31m 50s.xml">
-      <configuration name="ReviewServiceTest.editReview" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewServiceTest_editReview - 2019.06.27 at 12h 32m 41s.xml">
-      <configuration name="ReviewServiceTest.editReview" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewServiceTest - 2019.06.27 at 12h 33m 11s.xml">
-      <configuration name="ReviewServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewServiceTest - 2019.06.27 at 12h 34m 16s.xml">
-      <configuration name="ReviewServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ReviewServiceTest_addReviewInvalidGrade - 2019.06.27 at 12h 35m 08s.xml">
-      <configuration name="ReviewServiceTest.addReviewInvalidGrade" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ReviewServiceTest - 2019.06.27 at 12h 36m 15s.xml">
       <configuration name="ReviewServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -536,6 +491,27 @@
     </history-entry>
     <history-entry file="ReviewServiceTest_getReviewCountForProduct - 2019.06.27 at 12h 40m 10s.xml">
       <configuration name="ReviewServiceTest.getReviewCountForProduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReviewServiceTest_getReviewAvgGradeForProduct - 2019.06.27 at 12h 41m 10s.xml">
+      <configuration name="ReviewServiceTest.getReviewAvgGradeForProduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="finalproject_emag_service_in_EmagProject - 2019.06.27 at 12h 41m 29s.xml">
+      <configuration name="finalproject.emag.service in EmagProject" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscountServiceTest_addDiscount - 2019.06.27 at 12h 56m 46s.xml">
+      <configuration name="DiscountServiceTest.addDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscountServiceTest_addDiscount - 2019.06.27 at 12h 57m 17s.xml">
+      <configuration name="DiscountServiceTest.addDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscountServiceTest_addDiscount - 2019.06.27 at 12h 59m 02s.xml">
+      <configuration name="DiscountServiceTest.addDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscountServiceTest_addDiscount - 2019.06.27 at 12h 59m 21s.xml">
+      <configuration name="DiscountServiceTest.addDiscount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiscountServiceTest_addDiscountNoSuchProduct - 2019.06.27 at 13h 02m 21s.xml">
+      <configuration name="DiscountServiceTest.addDiscountNoSuchProduct" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -564,7 +540,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3802817" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -577,7 +553,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32936078" />
-      <window_info active="true" anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.32249466" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32249466" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -618,7 +594,7 @@
     <SUITE FILE_PATH="coverage/EmagProject_master$ReviewServiceTest_getReviewAvgGradeForProduct.ic" NAME="ReviewServiceTest.getReviewAvgGradeForProduct Coverage Results" MODIFIED="1561628463120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>finalproject.emag.service.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/EmagProject_master$finalproject_emag_service_in_EmagProject.ic" NAME="finalproject.emag.service in EmagProject Coverage Results" MODIFIED="1561628481064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/EmagProject_master$finalproject_emag_service_in_EmagProject.ic" NAME="finalproject.emag.service in EmagProject Coverage Results" MODIFIED="1561630233888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>finalproject.emag.service.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/EmagProject_master$ReviewServiceTest.ic" NAME="ReviewServiceTest Coverage Results" MODIFIED="1561628168518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -626,44 +602,6 @@
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.3.RELEASE/spring-security-core-3.2.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCrypt.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="333" column="26" selection-start-line="333" selection-start-column="26" selection-end-line="333" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/UserLoginDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/RegisterUserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingMethodAccessorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/java/lang/reflect/Method.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -953,13 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/StatRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -992,6 +923,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/DiscountRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ProductServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3635">
@@ -1011,15 +956,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        <state relative-caret-position="765">
+          <caret line="63" column="61" lean-forward="true" selection-start-line="63" selection-start-column="61" selection-end-line="63" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/DiscountProductDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/util/DiscountNotify.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ReviewServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/DiscountService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/DiscountServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
-          <caret line="119" column="74" selection-start-line="119" selection-start-column="74" selection-end-line="119" selection-end-column="74" />
+          <caret line="73" column="1" lean-forward="true" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -10,7 +10,7 @@ import javax.mail.MessagingException;
 import java.util.ArrayList;
 
 @Component
-public final class DiscountNotify {
+public class DiscountNotify {
 
     @Autowired
     private UserRepository userRepository;
