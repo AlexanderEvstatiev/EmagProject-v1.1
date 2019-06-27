@@ -26,20 +26,19 @@ public class ReviewService {
 
     public void addReview(ReviewRequestDto request, long productId, User user) {
         ReviewDto review = getReview(request, productId, user);
-        checkForReviewPresent(review);
+        checkForReviewPresent(review, user);
         this.reviewRepo.save(constructReview(review));
     }
 
     public void deleteReview(long productId, User user) {
         productService.checkIfProductExists(productId);
-        ReviewDto review = ReviewDto.builder().userId(user.getId()).productId(productId).build();
-        checkForReviewMissing(review);
-        this.reviewRepo.delete(constructReview(review));
+        checkForReviewMissing(productId, user);
+        this.reviewRepo.deleteReviewByProductIdAndUserId(productId, user.getId());
     }
 
     public void editReview(ReviewRequestDto request, long productId, User user) {
         ReviewDto review = getReview(request, productId, user);
-        checkForReviewMissing(review);
+        checkForReviewMissing(productId, user);
         this.reviewRepo.save(constructReview(review));
     }
 
@@ -76,16 +75,14 @@ public class ReviewService {
         return new ReviewId(user, product);
     }
 
-    private void checkForReviewMissing (ReviewDto review) {
-        ReviewId reviewId = constructReviewId(review);
-        reviewRepo.findByIdProductAndIdUser(reviewId.getProduct(), reviewId.getUser())
+    private void checkForReviewMissing (long reviewId, User user) {
+        reviewRepo.findReviewByProductIdAndUserId(reviewId, user.getId())
                 .orElseThrow(ReviewMissingException::new);
     }
 
-    private void checkForReviewPresent (ReviewDto review) {
-        ReviewId reviewId = constructReviewId(review);
+    private void checkForReviewPresent (ReviewDto review, User user) {
         Optional<Review> savedReview = reviewRepo.
-                findByIdProductAndIdUser(reviewId.getProduct(), reviewId.getUser());
+                findReviewByProductIdAndUserId(review.getProductId(), user.getId());
         if (savedReview.isPresent()) {
             throw new ReviewExistsException();
         }

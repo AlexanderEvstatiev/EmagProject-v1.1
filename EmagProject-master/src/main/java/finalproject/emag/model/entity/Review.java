@@ -33,4 +33,8 @@ public class Review {
 
     @Column(nullable = false)
     private int grade;
+
+    public Review(ReviewId id) {
+        this.id = id;
+    }
 }

@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1efaea4f-a07d-4703-9b06-f47201472d3d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finalproject/emag/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/finalproject/emag/service/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +18,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="343" />
+    <option name="myElementSize" value="347" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -25,10 +26,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/UserServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ReviewServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="70" column="65" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
+            <state relative-caret-position="502">
+              <caret line="119" column="74" selection-start-line="119" selection-start-column="74" selection-end-line="119" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,37 +38,62 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="343">
+              <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewRequestDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="8" />
+            <state>
+              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ProductServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+            <state relative-caret-position="-3635">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/controller/ProductControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+            <state relative-caret-position="417">
+              <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+              <folding>
+                <element signature="e#781#782#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -94,14 +120,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ViewUserDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/CartController.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/OrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/ReviewId.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/OrderedProductId.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/CartService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/GlobalViewProductDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ProductViewDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewDto.java" />
@@ -129,8 +153,6 @@
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/DiscountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/DiscountRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ReviewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewRequestDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ProductController.java" />
@@ -145,6 +167,10 @@
         <option value="$PROJECT_DIR$/src/test/java/finalproject/emag/service/ProductServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/finalproject/emag/service/UserServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/finalproject/emag/service/ReviewServiceTest.java" />
       </list>
     </option>
   </component>
@@ -355,8 +381,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.finalproject.emag.service in EmagProject">
+    <configuration name="ReviewServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -365,13 +391,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.UserServiceTest" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.editPersonalInfoInvalidPhone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReviewServiceTest.addReviewInvalidGrade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -380,14 +406,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="editPersonalInfoInvalidPhone" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
+      <option name="METHOD_NAME" value="addReviewInvalidGrade" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.getUserForLoginWrongPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReviewServiceTest.getReviewAvgGradeForProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -396,14 +422,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="getUserForLoginWrongPassword" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
+      <option name="METHOD_NAME" value="getReviewAvgGradeForProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.unsubscribe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReviewServiceTest.getReviewCountForProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -412,14 +438,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="unsubscribe" />
+      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.ReviewServiceTest" />
+      <option name="METHOD_NAME" value="getReviewCountForProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceTest.unsubscribeAlreadyDone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="finalproject.emag.service in EmagProject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="EmagProject" />
       <extension name="coverage">
         <pattern>
@@ -428,9 +454,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="finalproject.emag.service" />
-      <option name="MAIN_CLASS_NAME" value="finalproject.emag.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="unsubscribeAlreadyDone" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -444,11 +468,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserServiceTest" />
-        <item itemvalue="JUnit.UserServiceTest.getUserForLoginWrongPassword" />
-        <item itemvalue="JUnit.UserServiceTest.editPersonalInfoInvalidPhone" />
-        <item itemvalue="JUnit.UserServiceTest.unsubscribeAlreadyDone" />
-        <item itemvalue="JUnit.UserServiceTest.unsubscribe" />
+        <item itemvalue="JUnit.finalproject.emag.service in EmagProject" />
+        <item itemvalue="JUnit.ReviewServiceTest.getReviewAvgGradeForProduct" />
+        <item itemvalue="JUnit.ReviewServiceTest.getReviewCountForProduct" />
+        <item itemvalue="JUnit.ReviewServiceTest.addReviewInvalidGrade" />
+        <item itemvalue="JUnit.ReviewServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -483,35 +507,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceTest_subscribe - 2019.06.27 at 10h 16m 54s.xml">
-      <configuration name="UserServiceTest.subscribe" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest_deleteReviewProductNotExist - 2019.06.27 at 12h 28m 45s.xml">
+      <configuration name="ReviewServiceTest.deleteReviewProductNotExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_subscribeAlreadyDone - 2019.06.27 at 10h 17m 53s.xml">
-      <configuration name="UserServiceTest.subscribeAlreadyDone" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest_deleteReviewNotExist - 2019.06.27 at 12h 30m 11s.xml">
+      <configuration name="ReviewServiceTest.deleteReviewNotExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_unsubscribe - 2019.06.27 at 10h 18m 40s.xml">
-      <configuration name="UserServiceTest.unsubscribe" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest_editReview - 2019.06.27 at 12h 31m 50s.xml">
+      <configuration name="ReviewServiceTest.editReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_unsubscribe - 2019.06.27 at 10h 19m 00s.xml">
-      <configuration name="UserServiceTest.unsubscribe" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest_editReview - 2019.06.27 at 12h 32m 41s.xml">
+      <configuration name="ReviewServiceTest.editReview" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_unsubscribeAlreadyDone - 2019.06.27 at 10h 19m 46s.xml">
-      <configuration name="UserServiceTest.unsubscribeAlreadyDone" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest - 2019.06.27 at 12h 33m 11s.xml">
+      <configuration name="ReviewServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_unsubscribeAlreadyDone - 2019.06.27 at 10h 20m 09s.xml">
-      <configuration name="UserServiceTest.unsubscribeAlreadyDone" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest - 2019.06.27 at 12h 34m 16s.xml">
+      <configuration name="ReviewServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2019.06.27 at 10h 20m 32s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest_addReviewInvalidGrade - 2019.06.27 at 12h 35m 08s.xml">
+      <configuration name="ReviewServiceTest.addReviewInvalidGrade" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest_editPersonalInfoInvalidPhone - 2019.06.27 at 10h 23m 06s.xml">
-      <configuration name="UserServiceTest.editPersonalInfoInvalidPhone" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest - 2019.06.27 at 12h 36m 15s.xml">
+      <configuration name="ReviewServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2019.06.27 at 10h 23m 21s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest_addReviewInvalidGrade - 2019.06.27 at 12h 38m 42s.xml">
+      <configuration name="ReviewServiceTest.addReviewInvalidGrade" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserServiceTest - 2019.06.27 at 10h 26m 49s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
+    <history-entry file="ReviewServiceTest_getReviewCountForProduct - 2019.06.27 at 12h 40m 10s.xml">
+      <configuration name="ReviewServiceTest.getReviewCountForProduct" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
@@ -540,7 +564,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32719395" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3802817" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,7 +577,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32936078" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.32249466" />
+      <window_info active="true" anchor="right" id="Coverage" order="0" side_tool="true" visible="true" weight="0.32249466" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -576,98 +600,32 @@
     </ignored-roots>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EmagProject_master$ReviewServiceTest_addReviewInvalidGrade.ic" NAME="ReviewServiceTest.addReviewInvalidGrade Coverage Results" MODIFIED="1561628315677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>finalproject.emag.service.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/EmagProject_master$EmagApplication.ic" NAME="EmagApplication Coverage Results" MODIFIED="1559732302800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>finalproject.emag.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/EmagProject_master$UserServiceTest.ic" NAME="UserServiceTest Coverage Results" MODIFIED="1561620512126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>finalproject.emag.service.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/EmagProject_master$ReviewServiceTest_getReviewCountForProduct.ic" NAME="ReviewServiceTest.getReviewCountForProduct Coverage Results" MODIFIED="1561628403592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>finalproject.emag.service.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/EmagProject_master$ProductServiceTest.ic" NAME="ProductServiceTest Coverage Results" MODIFIED="1561547569725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>finalproject.emag.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/EmagProject_master$ReviewServiceTest_getReviewAvgGradeForProduct.ic" NAME="ReviewServiceTest.getReviewAvgGradeForProduct Coverage Results" MODIFIED="1561628463120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>finalproject.emag.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/EmagProject_master$finalproject_emag_service_in_EmagProject.ic" NAME="finalproject.emag.service in EmagProject Coverage Results" MODIFIED="1561628481064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>finalproject.emag.service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/EmagProject_master$ReviewServiceTest.ic" NAME="ReviewServiceTest Coverage Results" MODIFIED="1561628168518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>finalproject.emag.service.*</FILTER>
     </SUITE>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.1.5.RELEASE/spring-data-commons-2.1.5.RELEASE.jar!/org/springframework/data/querydsl/QuerydslPredicateExecutor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/CartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ProductViewDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/StatInsertDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/AddProductDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/keys/ReviewId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Stat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ProductRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Java/openjdk-12_windows-x64_bin/jdk-12/lib/src.zip!/java.base/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="145" column="13" selection-start-line="145" selection-start-column="13" selection-end-line="145" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/3.2.3.RELEASE/spring-security-core-3.2.3.RELEASE.jar!/org/springframework/security/crypto/bcrypt/BCrypt.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
@@ -682,13 +640,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="163" column="12" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -922,20 +873,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/controller/ProductControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/EditPersonalInfoDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -947,16 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ProductServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="266" column="5" selection-start-line="266" selection-start-column="5" selection-end-line="266" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,10 +901,125 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/controller/ProductControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="70" column="65" selection-start-line="70" selection-start-column="65" selection-end-line="70" selection-end-column="65" />
+        <state relative-caret-position="391">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ProductRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/UserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/controller/ReviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/ReviewRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/repository/StatRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/entity/Review.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="e#781#782#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/CartService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="115" column="12" selection-start-line="115" selection-start-column="12" selection-end-line="115" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ProductServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3635">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/model/dto/ReviewRequestDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finalproject/emag/service/ReviewService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/finalproject/emag/service/ReviewServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="119" column="74" selection-start-line="119" selection-start-column="74" selection-end-line="119" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
